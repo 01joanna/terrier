@@ -8,7 +8,7 @@ export default function Overview() {
 
 
     return (
-        <section className='w-screen h-full pb-40 pt-20 px-20 bg-[#42f542]' id='projects'>
+        <section className='w-screen h-full pb-40 pt-20 px-20 bg-white' id='projects'>
             <div className='flex flex-row px-10 items-end gap-10'>
                 <h1 className='titulo2 text-black text-[500px]'>Projects</h1>
                 <div className='flex flex-row gap-10 font-liberation text-lg pb-3 uppercase'>
