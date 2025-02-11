@@ -1,0 +1,213 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Two Jeys",
+            "by":  "John Doe",
+            "description": "This is project 1",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project1-1.jpg",
+                "project1-2.jpg",
+                "project1-3.jpg"
+            ],
+            "video": "/projects/euskanol/euskanol.mp4"
+        },
+        {
+            "id": 2,
+            "name": "Razzmatazz",
+            "by":  "Jane Doe",
+            "description": "This is project 2",
+            "directed by": "Jane Doe",
+            "year": 2020,
+            "images": [
+                "project2-1.jpg",
+                "project2-2.jpg",
+                "project2-3.jpg"
+            ],
+            "video": "/projects/razzmatazz/razz.mp4"
+        },
+        {
+            "id": 3,
+            "name": "Midnight Club",
+            "by":  "John Doe",
+            "description": "This is project 3",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project3-1.jpg",
+                "project3-2.jpg",
+                "project3-3.jpg"
+            ],
+            "video": "/projects/razzmatazz/razz.mp4"
+        },
+        {
+            "id": 4,
+            "name": "Cultural Time",
+            "by":  "Jane Doe",
+            "description": "This is project 4",
+            "directed by": "Jane Doe",
+            "year": 2020,
+            "images": [
+                "project4-1.jpg",
+                "project4-2.jpg",
+                "project4-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=4"
+        },
+        {
+            "id": 5,
+            "name": "Futanari",
+            "by":  "John Doe",
+            "description": "This is project 5",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project5-1.jpg",
+                "project5-2.jpg",
+                "project5-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=5"
+        },
+        {
+            "id": 6,
+            "name": "Gabete",
+            "by":  "Jane Doe",
+            "description": "This is project 6",
+            "directed by": "Jane Doe",
+            "year": 2020,
+            "images": [
+                "project6-1.jpg",
+                "project6-2.jpg",
+                "project6-3"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Pesos",
+            "by":  "John Doe",
+            "description": "This is project 7",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project7-1.jpg",
+                "project7-2.jpg",
+                "project7-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=7"
+        },
+        {
+            "id": 8,
+            "name": "A New Odyssey",
+            "by":  "Jane Doe",
+            "description": "This is project 8",
+            "directed by": "Jane Doe",
+            "year": 2020,
+            "images": [
+                "project8-1.jpg",
+                "project8-2.jpg",
+                "project8-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=8"
+        },
+        {
+            "id": 9,
+            "name": "Yass",
+            "by":  "John Doe",
+            "description": "This is project 9",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project9-1.jpg",
+                "project9-2.jpg",
+                "project9-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=9"
+        },
+        {
+            "id": 10,
+            "name": "The Last of Us 4",
+            "by":  "Jane Doe",
+            "description": "This is project 10",
+            "directed by": "Jane Doe",
+            "year": 2020,
+            "images": [
+                "project10-1.jpg",
+                "project10-2.jpg",
+                "project10-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=10"
+        },
+        {
+            "id": 11,
+            "name": "Ben Yart",
+            "by":  "John Doe",
+            "description": "This is project 11",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project11-1.jpg",
+                "project11-2.jpg",
+                "project11-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=11"
+        },
+        {
+            "id": 12,
+            "name": "Viento",
+            "by":  "Jane Doe",
+            "description": "This is project 12",
+            "directed by": "Jane Doe",
+            "year": 2020,
+            "images": [
+                "project12-1.jpg",
+                "project12-2.jpg",
+                "project12-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=12"
+        },
+        {
+            "id": 13,
+            "name": "Travis Birds",
+            "by":  "John Doe",
+            "description": "This is project 13",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project13-1.jpg",
+                "project13-2.jpg",
+                "project13-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=13"
+        },
+        {
+            "id": 14,
+            "name": "Holics SS23",
+            "by":  "Jane Doe",
+            "description": "This is project 14",
+            "directed by": "Jane Doe",
+            "year": 2020,
+            "images": [
+                "project14-1.jpg",
+                "project14-2.jpg",
+                "project14-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=14"
+        },
+        {
+            "id": 15,
+            "name": "C Mari",
+            "by":  "John Doe",
+            "description": "This is project 15",
+            "directed by": "John Doe",
+            "year": 2020,
+            "images": [
+                "project15-1.jpg",
+                "project15-2.jpg",
+                "project15-3.jpg"
+            ],
+            "video": "https://www.youtube.com/watch?v=15"
+        }
+        ]
+}
