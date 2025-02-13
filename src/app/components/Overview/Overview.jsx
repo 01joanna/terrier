@@ -8,9 +8,9 @@ export default function Overview() {
 
 
     return (
-        <section className='w-screen h-full pb-40 pt-20 px-20 bg-white' id='projects'>
+        <section className='w-screen h-full pb-40 pt-20 px-20 bg-black' id='projects'>
             <div className='flex flex-row px-10 items-end gap-10'>
-                <h1 className='titulo2 text-black text-[500px]'>Projects</h1>
+                <h1 className='titulo2 text-white text-[500px]'>Projects</h1>
                 <div className='flex flex-row gap-10 font-liberation text-lg pb-3 uppercase'>
                     <a
                         className={`cursor-pointer ${view === 'video' ? 'text-white' : 'text-gray-400'}`}
@@ -30,7 +30,7 @@ export default function Overview() {
                     <div className="grid grid-cols-3 gap-10">
                         {Data.projects.map((project, index) => (
                             <video 
-                                key={index} 
+                                key={project.id} 
                                 controls
                                 className="w-full">
                                 <source src={project.videoUrl} type="video/mp4" />

@@ -1,15 +1,16 @@
+'use client'
+import Link from 'next/link';
+
 export default function Header() {
     return (
-        <section className="py-10 px-10 flex flex-row justify-between bg-transparent w-screen font-liberation text-white fixed z-20 uppercase">
-            <div>
-                <a href="" className="titulo text-3xl">TERRIER</a>
-            </div>
-            <div className="flex flex-col items-end text-xs leading-[1.2rem]">
-                <a href="#home" className="list1">Home</a>
-                <a href="#projects" className="list2 ">Selected Works</a>
-                <a href="#projects" className="list2 ">Projects</a>
-                <a href="#contact" className="">Contact</a>
+        <section className="py-10 px-10 flex flex-row justify-between bg-transparent w-screen font-liberation text-white fixed z-50 uppercase">
+            <div></div>
+            <div className="flex flex-row items-end text-xs leading-[1.2rem] gap-9 mr-20">
+                <Link href="/#home" className="list1">Home</Link>
+                <Link href="/#selected-works" className="list2">Selected Works</Link>
+                <Link href="/projects" className="list2">Projects</Link>
+                <Link href="/#contact" className="">Contact</Link>
             </div>
         </section>
-    )
+    );
 }

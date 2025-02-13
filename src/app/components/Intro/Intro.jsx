@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation';
 import Data from '../../data/projects.json';
 
 export default function Intro() {
-    const [currentProject, setCurrentProject] = useState(Data.projects[0]);
+    const [currentProject, setCurrentProject] = useState(Data.projects[1]);
 
     return (
         <section className="intro w-screen h-screen relative flex" id="home">
@@ -16,6 +16,7 @@ export default function Intro() {
                 loop
                 muted
                 playsInline
+                pointer-events-none="true"
             ></video>
             <Navigation
                 currentProject={currentProject}

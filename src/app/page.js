@@ -1,15 +1,22 @@
+'use client'
 import React from 'react';
-import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
-import Overview from './components/Overview/Overview';
 import Contact from './components/Contact/Contact';
+import Loader from './components/Loader/Loader';
+import Selected from './components/Selected/Selected';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div className='w-full h-full'>
-      <Intro />
-      <Overview />
-      <Contact/>
-    </div>
+    <motion.section
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 50 }}
+      transition={{ duration: 0.5 }}>
+      {/* <Loader /> */}
+        <Intro />
+        <Selected />
+        <Contact />
+    </motion.section >
   );
 }
