@@ -9,7 +9,7 @@ export default function Header() {
                 <Link href="/#home" className="list1">Home</Link>
                 <Link href="/#selected-works" className="list2">Selected Works</Link>
                 <Link href="/projects" className="list2">Projects</Link>
-                <Link href="/#contact" className="">Contact</Link>
+                <Link href="/#contact" className="">About</Link>
             </div>
         </section>
     );
