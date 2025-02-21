@@ -24,7 +24,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><AnimatePresence mode="wait">
+      >
+        <AnimatePresence mode="sync">
         <Header/>
         {children}
         </AnimatePresence>
@@ -32,3 +33,75 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+    // return (
+    //     <div className="absolute flex w-full h-full top-0 left-0 items-center justify-center z-20 gap-64">
+
+    //         <div className='w-1/2'>
+    //             <h1 className='flex justify-end'>
+    //                 <AnimatePresence mode="sync">
+    //                     <motion.h1
+    //                         className="titulo text-gray-200"
+    //                         key={currentProject.director}
+    //                         initial={{ opacity: 0, y: 20 }}
+    //                         animate={{ opacity: 1, y: 20 }}
+    //                         exit={{ opacity: 0, y: 3 }}
+    //                         transition={{ duration: 0.25, ease: "easeInOut" }}
+    //                     >
+    //                         {currentProject.name}
+    //                     </motion.h1>
+    //                 </AnimatePresence>
+    //             </h1>
+    //         </div>
+
+    //         <div className="w-1/2">
+    //             <div className='overflow-x-hidden scrollbar-hide flex justify-start'>
+    //             <ul className="font-liberation uppercase text-xs text-white flex flex-col w-[30rem] h-[7rem]">
+    //                 {Data.projects.map((project) => {
+    //                     const isActive = project.id === currentProject.id;
+    //                     return (
+
+    //                         <li key={project.id}>
+    //                             <a
+    //                                 href={`#${project.id}`}
+    //                                 onClick={(e) => {
+    //                                     e.preventDefault();
+    //                                     setCurrentProject(project);
+    //                                 }}
+    //                                 className={`list2 cursor-pointer transition-opacity flex justify-between ${isActive ? 'text-white opacity-100' : 'opacity-50 hover:opacity-100'}`}
+    //                                 style={{
+    //                                     // transform: isActive ? 'scale(1.1)' : 'scale(1)' ,
+    //                                     transition: 'transform 0.5s ease-in-out'
+    //                                 }}
+    //                             >
+    //                                 <p>{project.name}</p>
+    //                                 <p>{project.year}</p>
+    //                             </a>
+    //                         </li>
+    //                     )
+    //                 })}
+    //             </ul>
+    //             </div>
+    //         </div>
+
+    //         {/* <div
+    //             className='absolute bottom-20 left-3'
+    //             id='intro-description'
+    //         >
+    //             <AnimatePresence mode="sync">
+    //                 <motion.p
+    //                     className='text-white text-xs font-liberation'
+    //                     key={`d-${currentProject.id}`}
+    //                     initial={{ opacity: 0, y: 20 }}
+    //                     animate={{ opacity: 1, y: 0 }}
+    //                     exit={{ opacity: 0, y: -20 }}
+    //                     transition={{ duration: 0.5, ease: "easeInOut" }}
+    //                 >
+    //                     {currentProject.description}
+    //                 </motion.p>
+    //             </AnimatePresence>
+    //         </div> */}
+
+    //     </div>
+    // );

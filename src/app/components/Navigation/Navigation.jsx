@@ -1,63 +1,44 @@
 'use client'
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Data from '../../data/projects.json';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navigation({ currentProject, setCurrentProject }) {
+
+    const [scroll, setScroll] = useState(0);
+    const listRef = useRef(null);
+    
+    console.log(currentProject)
     return (
-        <div className="absolute flex w-full h-full top-0 left-0 items-center justify-center z-20 gap-64">
-            
-            {/* Animación para el título con framer-motion */}
-            <motion.h1
-                className="titulo text-gray-200"
-                key={currentProject.id}  // Cambiar cuando el proyecto cambia
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-            >
-                {currentProject.name}
-            </motion.h1>
-
-            <div className="max-h-[6rem] w-[20rem] overflow-y-auto no-scrollbar">
-                <ul className="font-liberation uppercase text-xs text-white">
-                    {Data.projects.map((project) => (
-                        <li key={project.id}>
-                            <a
-                                href={`#${project.id}`}
-                                onClick={(e) => {
-                                    e.preventDefault(); 
-                                    setCurrentProject(project);
-                                }}
-                                className={`list2 cursor-pointer transition-opacity flex justify-between ${
-                                    project.id === currentProject.id
-                                    ? 'text-white opacity-100' 
-                                    : 'opacity-50 hover:opacity-100'
-                                }`}
-                            >   
-                                <p>{project.name}</p>
-                                <p>{project.year}</p>
-                            </a>
-                        </li>
-                    ))}
-                </ul>
+        <div className='absolute w-screen h-screen flex justify-center items-center gap-20'>
+            <div className='w-1/2 flex justify-end'>
+            <h1 
+            id='titulo'
+            className='text-4xl font-rapidbold'>Hola</h1>
             </div>
+            <div id='lista'
+            className='w-1/3 flex justify-start'>
+                <nav className='w-full font-liberation text-xs'>
+                    <ul>
+                        {Data.projects.map((project) => {
+                                const isActive = project.id === currentProject.id;
 
-            <div 
-            className='absolute bottom-20 left-3'
-            id='intro-description'
-            >
-                <motion.p
-                    className='text-white text-xs font-liberation'
-                    key={currentProject.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                >
-                    {currentProject.description}
-                </motion.p>
+                                return (
+                                    <li key={project.name} className=''>
+                                        <a 
+                                        href=''
+                                        className={`flex flex-row gap-20 cursor-pointer transition-opacity justify-between uppercase`}
+                                        style={{transition: 'transform 0.5 ease-in-out'}}>
+                                            <p>{project.name}</p>
+                                            <p>{project.year}</p>
+                                        </a>
+                                    </li>
+                                )
+                        }
+                        )}
+                    </ul>
+                </nav>
             </div>
         </div>
-    );
+    )
 }
