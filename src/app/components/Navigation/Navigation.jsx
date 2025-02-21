@@ -6,16 +6,16 @@ import { useRouter } from 'next/navigation';
 
 export default function Navigation({ currentProject, setCurrentProject }) {
     const router = useRouter();
-    const [scrollIndex, setScrollIndex] = useState(Math.floor(Data.projects.length / 2));
+    // const [scrollIndex, setScrollIndex] = useState(Math.floor(Data.projects.length / 2));
     const listRef = useRef(null);
 
-    useEffect(() => {
-        if (listRef.current) {
-            const listHeight = listRef.current.clientHeight;
-            const itemHeight = listHeight / Data.projects.length;
-            listRef.current.scrollTop = scrollIndex * itemHeight - listHeight / 2;
-        }
-    }, [scrollIndex]);
+    // useEffect(() => {
+    //     if (listRef.current) {
+    //         const listHeight = listRef.current.clientHeight;
+    //         const itemHeight = listHeight / Data.projects.length;
+    //         listRef.current.scrollTop = scrollIndex * itemHeight - listHeight / 2;
+    //     }
+    // }, [scrollIndex]);
     
     console.log(currentProject)
     return (
@@ -30,7 +30,9 @@ export default function Navigation({ currentProject, setCurrentProject }) {
             <div id='lista'
             className='w-1/5 flex justify-start'>
                 <nav className='w-full font-liberation text-xs'>
-                    <ul className='mx-h-5' ref={listRef}>
+                    <ul className='mx-h-5' 
+                    ref={listRef}
+                    >
                         {Data.projects.map((project) => {
                                 const isActive = project.id === currentProject.id;
 
@@ -46,8 +48,9 @@ export default function Navigation({ currentProject, setCurrentProject }) {
                                             e.preventDefault();
                                             setCurrentProject(project)
                                         }}
-                                        className={`flex flex-row gap-20 cursor-pointer transition-opacity justify-between uppercase ${isActive ? 'text-white opacity-100' : 'opacity-50 hover:opacity-100'}`}
-                                        style={{transition: 'transform 0.5 ease-in-out'}}>
+                                        className={`flex flex-row gap-20 cursor-pointer justify-between uppercase ${isActive ? 'text-white opacity-100' : 'opacity-50 hover:opacity-100'}`}
+                                        // style={{transition: 'transform 0.5 ease-in-out'}}
+                                        >
                                             <p>{project.name}</p>
                                             <p>{project.year}</p>
                                         </a>
