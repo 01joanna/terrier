@@ -203,5 +203,12 @@
             "selected": true,
             "video": "https://player.vimeo.com/video/923822677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         }
+        ],
+        "external": [
+            {
+                "id": 1,
+                "name": "Video general",
+                "video": "https://player.vimeo.com/video/945881412?title=0&byline=0&portrait=0&color=000000&muted=1&autoplay=1&autopause=0&loop=1&background=1&app_id=122963"
+            }
         ]
 }
