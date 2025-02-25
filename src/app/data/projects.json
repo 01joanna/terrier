@@ -13,7 +13,7 @@
                 "project1-3.jpg"
             ],
             "selected": true,
-            "video": "https://player.vimeo.com/video/863688750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            "video": "https://player.vimeo.com/video/863688750?autoplay=1&background=1&loop=1&muted=1"
         },
         {
             "id": 2,
@@ -27,7 +27,7 @@
                 "project2-3.jpg"
             ],
             "selected": true,
-            "video": "https://player.vimeo.com/video/919330775?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            "video": "https://player.vimeo.com/video/919330775?autoplay=1&background=1&loop=1&muted=1"
         },
         {
             "id": 3,
@@ -42,7 +42,7 @@
                 "project3-3.jpg"
             ],
             "selected": true,
-            "video": "https://player.vimeo.com/video/984417422?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            "video": "https://player.vimeo.com/video/984417422?autoplay=1&background=1&loop=1&muted=1"
         },
                 {
             "id": 4,
@@ -57,7 +57,7 @@
                 "project3-3.jpg"
             ],
             "selected": true,
-            "video": "https://player.vimeo.com/video/1047460775?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            "video": "https://player.vimeo.com/video/1047460775?autoplay=1&background=1&loop=1&muted=1"
         },
         {
             "id": 5,
@@ -185,7 +185,8 @@
                 "project3-3.jpg"
             ],
             "selected": true,
-            "video": "https://player.vimeo.com/video/923822677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            "video": "https://player.vimeo.com/video/923822677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+            "reel": "https://player.vimeo.com/video/923822677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         },
         {
             "id": 13,
@@ -201,7 +202,8 @@
                 "project3-3.jpg"
             ],
             "selected": true,
-            "video": "https://player.vimeo.com/video/923822677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            "video": "https://player.vimeo.com/video/923822677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+            "reel": "https://player.vimeo.com/video/923822677?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
         }
         ],
         "external": [

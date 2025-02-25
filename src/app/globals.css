@@ -64,7 +64,7 @@ body {
 
 iframe {
   width: 100% !important;
-  height: 120vh !important;
+  height: 100vh !important;
 }
 
 .titulo {
@@ -91,6 +91,11 @@ html {
   padding-left: 30px;
   padding-right: 30px;
 }
-
+/* 
+.vp-center {
+  display: flex;
+  justify-content: baseline !important;
+  /* align-items: baseline !important;
+} */
 
 

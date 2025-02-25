@@ -19,7 +19,7 @@ export default function Navigation({ currentProject, setCurrentProject }) {
     
     console.log(currentProject)
     return (
-        <div className='absolute w-screen h-screen flex items-center gap-20 justify-evenly'>
+        <div className='absolute w-screen h-screen items-center gap-20 justify-evenly md:flex hidden'>
             <div className='w-3/5 flex justify-end'>
             <h1 
             id='titulo'
