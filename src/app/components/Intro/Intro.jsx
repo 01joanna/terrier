@@ -11,7 +11,7 @@ export default function Intro() {
     return (
         <section className="intro w-screen h-screen relative flex" id="home">
             <iframe
-                src={backgroundReel}
+                    src={`${backgroundReel}?autoplay=1&loop=1&mute=1&background=1&controls=0`}
                 className=""
                 // allow="autoplay; fullscreen"
                 // allowFullScreen
