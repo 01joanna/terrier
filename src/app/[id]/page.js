@@ -22,7 +22,7 @@ export default function ProjectPage() {
         <section className="w-screen h-screen py-24 flex flex-col gap-20">
             <div id="p-video" className="justify-center flex">
                 <iframe
-                    src={`${project.video}?autoplay=1&loop=1&mute=1`}
+                    src={`${project.video}?autoplay=1&loop=1&mute=1&background=1&controls=0`}
                     allow="autoplay; fullscreen; picture-in-picture"
                     className="w-full h-[90vh] object-cover"
                     style={{width: '100%', height: '90vh'}}

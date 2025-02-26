@@ -19,7 +19,7 @@ export default function Navigation({ currentProject, setCurrentProject }) {
     
     console.log(currentProject)
     return (
-        <div className='absolute w-screen h-screen items-center gap-20 justify-evenly md:flex hidden'>
+        <div className='absolute w-screen h-screen md:items-center items-start md:gap-20 md:justify-evenly justify-center flex md:flex-row flex-col'>
             <div className='w-3/5 flex justify-end'>
             <h1 
             id='titulo'
@@ -28,8 +28,8 @@ export default function Navigation({ currentProject, setCurrentProject }) {
             </h1>
             </div>
             <div id='lista'
-            className='w-1/5 flex justify-start'>
-                <nav className='w-full font-liberation text-xs'>
+            className='w-1/5 flex justify-start md:ml-0 ml-10'>
+                <nav className='md:w-full w-40 font-liberation text-xs'>
                     <ul className='mx-h-5' 
                     ref={listRef}
                     >
@@ -51,8 +51,8 @@ export default function Navigation({ currentProject, setCurrentProject }) {
                                         className={`flex flex-row gap-20 cursor-pointer justify-between uppercase ${isActive ? 'text-white opacity-100' : 'opacity-50 hover:opacity-100'}`}
                                         // style={{transition: 'transform 0.5 ease-in-out'}}
                                         >
-                                            <p>{project.name}</p>
-                                            <p>{project.year}</p>
+                                            <p className=''>{project.name}</p>
+                                            <p className='md:flex hidden '>{project.year}</p>
                                         </a>
                                     </li>
                                 )

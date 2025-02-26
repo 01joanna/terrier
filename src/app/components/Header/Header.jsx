@@ -21,7 +21,7 @@ export default function Header() {
     }
 
     return (
-        <header className={`py-10 md:px-10 flex flex-row justify-around bg-transparent w-screen font-liberation text-white fixed z-50 uppercase`}>
+        <header className={`py-10 md:px-10 flex flex-row justify-around md:justify-between bg-transparent w-screen font-liberation text-white fixed z-50 uppercase`}>
             <div id="logo" className='text-xs'>
                 TERRIER
             </div>
